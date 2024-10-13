@@ -54,6 +54,85 @@
         <div class="text-center mt-8 mb-8">
             <button class="btn bg-[#EB5757] text-white font-semibold">See More</button>
         </div>
+
+        <!-- Modal -->
+        <!-- Open the modal using ID.showModal() method -->
+        <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <div class="space-y-12">
+                    <div class=" bg-[#fef6f6] p-8 rounded-2xl border border-red-500">
+                        <h2 class="text-2xl font-semibold">
+                            ChatGPT is an AI-powered chatbot platform that uses OpenAI's GPT technology to simulate
+                            human conversation.
+                        </h2>
+                        <!-- cards -->
+                        <div class="flex flex-col md:flex-row justify-between items-center mt-6 gap-10 md:gap-0">
+                            <div class="bg-white rounded-2xl flex justify-center items-center w-11/12 md:w-[30%]">
+                                <h2 class="text-base font-bold text-[#03A30A] p-5 text-center">
+                                    $10/ <br> month <br> Basic
+                                </h2>
+                            </div>
+                            <div class="bg-white rounded-2xl flex justify-center items-center w-11/12 md:w-[30%]">
+                                <h2 class="text-base font-bold text-[#F28927] p-5 text-center">
+                                    $50/ <br> month <br> Pro
+                                </h2>
+                            </div>
+                            <div class="bg-white rounded-2xl flex justify-center items-center w-11/12 md:w-[30%]">
+                                <h2 class="text-base font-bold text-[#EB5757] p-5 text-center">
+                                    Contact <br> us <br> Enterprise
+                                </h2>
+                            </div>
+                        </div>
+
+                        <!-- features and integrations -->
+                        <!-- features and integrations -->
+                        <div class="flex flex-col md:flex-row justify-between items-center mt-6 mb-11 gap-6 md:gap-0">
+                            <!-- features -->
+                            <div class="w-full md:w-auto">
+                                <h2 class="text-2xl font-semibold">Features</h2>
+                                <ul class="text-[#585858] list-disc pl-4 mt-2">
+                                    <li>Customizable responses</li>
+                                    <li>Multilingual support</li>
+                                    <li>Seamless integration</li>
+                                </ul>
+                            </div>
+                            <!-- integrations -->
+                            <div class="w-full md:w-auto">
+                                <h2 class="text-2xl font-semibold">Integrations</h2>
+                                <ul class="text-[#585858] list-disc pl-4 mt-2">
+                                    <li>FB Messenger</li>
+                                    <li>Slack</li>
+                                    <li>Telegram</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="p-8 rounded-2xl border border-[#e7e7e7]">
+                        <!-- image -->
+                        <div>
+                            <img src="assets/no-photo.avif" alt="">
+                        </div>
+                        <!-- content -->
+                        <div class="mt-4">
+                            <h2 class="text-2xl font-semibold text-center">Hi, how are you doing today?</h2>
+                            <p class="text-[#585858] text-center mt-2">I'm doing well, thank you for asking. How can I
+                                assist you today?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn bg-red-500 text-white font-bold">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
     </main>
     <footer></footer>
 

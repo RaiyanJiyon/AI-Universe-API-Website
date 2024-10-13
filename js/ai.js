@@ -18,7 +18,7 @@ const displayData = (tools) => {
     const aiCardContainer = document.getElementById('ai-card-container');
     const fragment = document.createDocumentFragment();
 
-    tools.forEach(({ image, name, published_in, features }) => {
+    tools.forEach(({id, image, name, published_in, features }) => {
         const aiCard = document.createElement('div');
         aiCard.classList.add('card', 'border', 'border-[#CFCFCF]');
 
@@ -46,7 +46,7 @@ const displayData = (tools) => {
                             <p class="text-[#585858] font-medium">${published_in || 'Not available'}</p>
                         </div>
                     </div>
-                    <div class="w-12 h-12 bg-[#FEF7F7] rounded-full flex justify-center items-center">
+                    <div onclick="seeMore('${id}')" class="w-12 h-12 bg-[#FEF7F7] rounded-full flex justify-center items-center cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-red-500">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                         </svg>
@@ -59,5 +59,9 @@ const displayData = (tools) => {
 
     aiCardContainer.appendChild(fragment);
 }
+
+const seeMore = (id) => {
+    console.log('click on', id)
+} 
 
 loadData();
