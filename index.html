@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus Ticket Landing Page</title>
+    <title>AI Universe Hub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- google font family added -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,50 +42,23 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="w-11/12 2xl:w-1/2 mx-auto">
         <!-- Ai cards section -->
-        <section>
+        <section class="mt-12">
             <!-- card -->
-            <div class="card border border-[#CFCFCF]">
-                <!-- card image -->
-                <div class="w-11/12 mx-auto mt-5">
-                    <figure class="w-full rounded-lg">
-                        <img class="w-full object-cover" src="${pet.image}" alt="${pet.image} image" />
-                    </figure>
-                </div>
-                <!-- card content -->
-                <div class="card-body p-0 w-11/12 mx-auto">
-                    <!-- list -->
-                    <div class="space-y-4">
-                        <h2 class="card-title mt-5">${pet.pet_name || "Not available"}</h2>
+            <div id="ai-card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-5">
 
-                        <ol>
-                            <li>1. Natural language processing</li>
-                            <li>2. Contextual understanding</li>
-                            <li>3. Text generation</li>
-                        </ol>
-                    </div>
-                    <!-- divider -->
-                    <div class="divider text-[#1313131A]"></div>
-
-                    <h2 class="card-title">${pet.pet_name || "Not available"}</h2>
-
-                    <div class="flex items-center gap-1 mt-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" />
-                        </svg>
-
-                        <p class="text-[#585858] font-medium">11/01/2022</p>
-                    </div>
-
-
-                </div>
             </div>
         </section>
+
+        <div class="text-center mt-8 mb-8">
+            <button class="btn bg-[#EB5757] text-white font-semibold">See More</button>
+        </div>
     </main>
     <footer></footer>
+
+    <!-- script -->
+    <script src="./js/ai.js"></script>
 </body>
 
 </html>
