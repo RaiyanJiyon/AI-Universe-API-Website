@@ -51,9 +51,27 @@
             </div>
         </section>
 
+        <!-- see more button -->
         <div class="text-center mt-8 mb-8">
-            <button class="btn bg-[#EB5757] text-white font-semibold">See More</button>
+            <button id="click" class="btn bg-[#EB5757] text-white font-semibold">See More</button>
         </div>
+
+        <!-- no item container -->
+        <div id="no-search-message" class="hidden col-span-3 card bg-[#13131308] mt-10 mb-10 pb-10">
+            <div class="card-body space-y-4">
+                <div class="flex justify-center pt-12">
+                    <img src="assets/error.webp" alt="error image">
+                </div>
+                <h2 class="text-3xl font-bold text-center">
+                    No More AI Tools Are Available
+                </h2>
+                <p class="text-[#706F6F] text-center">
+                    We're sorry, but your currently we don't have more AI tools information. Please check your search term or try
+                    again later.
+                </p>
+            </div>
+        </div>
+
 
         <!-- Modal -->
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle"></dialog>

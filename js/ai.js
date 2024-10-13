@@ -18,7 +18,7 @@ const displayData = (tools) => {
     const aiCardContainer = document.getElementById('ai-card-container');
     const fragment = document.createDocumentFragment();
 
-    tools.forEach(({id, image, name, published_in, features }) => {
+    tools.forEach(({ id, image, name, published_in, features }) => {
         const aiCard = document.createElement('div');
         aiCard.classList.add('card', 'border', 'border-[#CFCFCF]');
 
@@ -62,7 +62,7 @@ const displayData = (tools) => {
 
 const openModal = async (id) => {
     try {
-        const response = await fetch(`https://openapi.programming-hero.com/api/ai/tool/${id}`) 
+        const response = await fetch(`https://openapi.programming-hero.com/api/ai/tool/${id}`)
         const jsonData = await response.json();
         const data = jsonData.data;
         console.log(data)
@@ -70,7 +70,7 @@ const openModal = async (id) => {
     } catch (error) {
         console.error('Modal open error', error);
     }
-} 
+}
 
 const displayModal = (data) => {
     const myModal = document.getElementById('my_modal_5');
@@ -153,5 +153,17 @@ const displayModal = (data) => {
 
     myModal.showModal();
 }
+
+const singleClick = document.getElementById('click')
+    .addEventListener('click', () => {
+        const noSearchContainer = document.getElementById('no-search-message');
+        noSearchContainer.classList.remove('hidden');
+    })
+
+const doubleClick = document.getElementById('click')
+    .addEventListener('dblclick', () => {
+        const noSearchContainer = document.getElementById('no-search-message');
+        noSearchContainer.classList.add('hidden');
+    })
 
 loadData();
